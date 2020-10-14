@@ -1,3 +1,6 @@
+# importing important modules
+import random 
+import numpy
 
 
 class Account:
