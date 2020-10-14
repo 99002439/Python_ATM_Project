@@ -55,7 +55,7 @@ class Account:
 
 #  a function to quit coming later
 
-def main():
+def ATM_main():
     # Creating accounts 
     accounts = []
     for i in range(1000, 9999): 
@@ -140,4 +140,4 @@ def main():
                 print("\nThat's an invalid choice.")
                 #break;
 # call main
-main()
+ATM_main()
