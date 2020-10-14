@@ -1,6 +1,4 @@
-# importing important modules
-import random 
-import numpy
+
 
 class Account:
     depositFrequency = 4
