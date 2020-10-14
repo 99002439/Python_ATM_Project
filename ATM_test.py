@@ -12,7 +12,7 @@ class MyTest(unittest.TestCase):
         self.assertEqual(deposit(5000), 5000)
         self.assertEqual(deposit(2000), 7000)
         self.assertEqual(withdraw(1000), 6000)
-        self.assertEqual(withdraw(2000), 4000)
+        self.assertEqual(withdraw(1000), 5000)
         
 if __name__ == '__main__':
     unittest.main()
