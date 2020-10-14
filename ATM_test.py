@@ -1,13 +1,18 @@
 import unittest
-from palindromCheck import palindromCheck
+# importing important modules
+import random 
+import numpy
+
+from ATM_src import Account
 # import palindromeCheck
 
 class MyTest(unittest.TestCase):
     def test_my_function(self):
-        self.assertEqual(palindromCheck('abc'), 0)
-       # self.assertEqual(palindromCheck('aba'), 1)
-       # self.assertEqual(palindromCheck('123'), 0)
-       # self.assertEqual(palindromCheck('121'), 1)
+        account = Account(1021);
+        self.assertEqual(deposit(5000), 5000)
+        self.assertEqual(deposit(2000), 7000)
+        self.assertEqual(withdraw(1000), 6000)
+        self.assertEqual(withdraw(2000), 4000)
         
 if __name__ == '__main__':
     unittest.main()
