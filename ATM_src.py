@@ -132,7 +132,7 @@ def ATM_main():
                             (10000, 1000000))
                     print("Thanks for choosing us as your bank")
                 else:
-                    main()
+                    ATM_main()
               
  
            # Any other choice
