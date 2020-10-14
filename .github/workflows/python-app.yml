@@ -33,7 +33,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Testing 
       run: |
-        python ATM_test.py
+        # python ATM_test.py
     - name: Application 
       run: |
         python ATM_src.py
