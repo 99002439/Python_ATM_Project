@@ -44,10 +44,13 @@ class Account:
     def withdraw(self, amount):
     #    here if you withdraw your new balance changes
         self.balance -= amount
+        return self.balance
+    
 #  a function to depoit
     def deposit(self, amount):
     #    deposit equals amount being deposited+existing balance
         self.balance += amount 
+        return self.balance
 
 #  a function to quit coming later
 
@@ -97,7 +100,7 @@ def main():
                 if amt < accountObj.getBalance():
                     print("Your Balance is:" +  str(accountObj.getBalance())+ " ")
                     # Calling withdraw method
-                    accountObj.withdraw(amt)
+                    temp = accountObj.withdraw(amt)
                     # Printing updated balance
                     print("\nUpdated Balance: " + str(accountObj.getBalance()) + " \n")
                     print("you have only 2 withdrawal times remaining")
@@ -113,7 +116,7 @@ def main():
                 ver_deposit = input("Is this the correct amount, Yes, or No ? " + str(amt) + " ")
                 if ver_deposit == "Yes":
                     # Calling deposit method
-                    accountObj.deposit(amt)
+                    temp = accountObj.deposit(amt)
                     # Printing updated balance
                     print("\nUpdated Balance: " + str(accountObj.getBalance()) + " \n")
                     print("you have only 3 deposit times remaining")
@@ -136,4 +139,4 @@ def main():
                 print("\nThat's an invalid choice.")
                 #break;
 # call main
-main()
+#main()
