@@ -18,8 +18,3 @@ after_success:
     - coveralls
     - codecov
     
-notifications:
-  email:
-    recipients:
-    on_success: always
-    on_failure: always
