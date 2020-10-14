@@ -34,6 +34,4 @@ jobs:
     - name: Testing 
       run: |
         # python ATM_test.py
-    - name: Application 
-      run: |
-        python ATM_src.py
+ 
